@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Buy
+{% endblock %}
+
+{% block main %}
+<div class="container">
+    <form action="/buy" method="post" class="row align-items-center">
+        <div class="col">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="buy-symbol" name="symbol" placeholder="Symbol" type="text">
+        </div>
+        <div class="col">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="buy-shares" name="shares" placeholder="Shares" type="number" min="1">
+        </div>
+        <div class="col">
+            <button class="btn btn-primary" type="submit">Buy</button>
+        </div>
+    </form>
+    <div class="row">
+        <div class="col-4">
+            <p id="buy-symbol-response">
+            </p>
+        </div>
+    </div>
+</div>
+
+<script>
+    options('#buy-symbol');
+    function options(id) {
+        let input = document.querySelector(id);
+        inputResponse = id + '-response'
+        input.addEventListener('input', async function() {
+            let html = ''
+            if (input.value !== '') {
+                let response = await fetch('/search?q=' + input.value);
+                symbols = await response.json();
+                symbols.forEach((symbol) => {
+                html += '<div>' + symbol + '</div>'
+                })
+            }
+            document.querySelector(inputResponse).innerHTML = html;
+        });
+    }
+</script>
+
+{% endblock %}

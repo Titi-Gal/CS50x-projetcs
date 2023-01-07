@@ -1,0 +1,11 @@
+sort1 uses: bubble sort
+
+How do you know?: it takes less time when list is sorted, probably passing thought the number once without making swaps and quilting.
+
+sort2 uses: merge sort
+
+How do you know?: its the fastest of the 3 sorts and it takes about the same time for sorted and random numbers.
+
+sort3 uses: selection sort
+
+How do you know?: It takes longer than sort2 and it takes about the same time for sorted and random numbers, which means its doing the same work independent if the numbers are sorted or random.

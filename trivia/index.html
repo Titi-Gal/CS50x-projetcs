@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+
+                <h3>Question?</h3>
+                <button class="incorrect">incorrect</button>
+                <button class="incorrect">incorrect</button>
+                <button class="correct">correct</button>
+                <p id="feedback1"></p>
+
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+
+                <h3>Question?</h3>
+                <input type="text" placeholder="Correct"></input>
+                <button id="submit">submit</button>
+                <p id="feedback2"></p>
+
+            </div>
+        </div>
+    </body>
+
+    <script>
+        let correctbtn = document.querySelector('.correct');
+        correctbtn.addEventListener('click', function() {
+        correctbtn.style.backgroundColor = 'green';
+        document.querySelector('#feedback1').innerHTML = 'Correct!';
+        });
+
+        let incorrectbtns = document.querySelectorAll('.incorrect');
+        for (let i = 0; i < incorrectbtns.length; i++) {
+            incorrectbtns[i].addEventListener('click', function() {
+            incorrectbtns[i].style.backgroundColor = 'red';
+            document.querySelector('#feedback1').innerHTML = 'Incorrect!';
+            });
+        }
+
+        document.querySelector('#submit').addEventListener('click', function() {
+            let input = document.querySelector('input');
+            if (input.value === 'Correct') {
+                input.style.backgroundColor = 'green';
+                document.querySelector('#feedback2').innerHTML = 'Correct!';
+            } else {
+                input.style.backgroundColor = 'red';
+                document.querySelector('#feedback2').innerHTML = 'Incorrect!';
+            }
+        });
+    </script>
+    
+</html>

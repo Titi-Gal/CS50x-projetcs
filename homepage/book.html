@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CoolService</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">CoolService</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="book.html">Book</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="manage.html">Manage</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="profile.html">Profile</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <section>
+        <header><h1>Weekly Sessions</h1></header>
+            <div>
+                <div id="plans-carousel" class="carousel slide" data-bs-ride="false">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#plans-carousel" data-bs-slide-to="0" class="active indicators-black" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#plans-carousel" data-bs-slide-to="1" class="indicators-black" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#plans-carousel" data-bs-slide-to="2" class="indicators-black" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#plans-carousel" data-bs-slide-to="3" class="indicators-black" aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner text-center">
+                        <div class="carousel-item active">
+                            <p>1 trial session</p>
+                            <p>Expires in 2 weeks</p>
+                            <p>$50 money back guarantee</p>
+                        </div>
+                        <div class="carousel-item">
+                            <p>1 session</p>
+                            <p>Expires in 2 weeks</p>
+                            <p>$150 per session</p>
+                        </div>
+                        <div class="carousel-item">
+                            <p>4 sessions</p>
+                            <p>Expires in 5 weeks</p>
+                            <p>$100 per session</p>
+                        </div>
+                        <div class="carousel-item">
+                            <p>20 sessions</p>
+                            <p>Expires in 24 weeks</p>
+                            <p>$90 per session</p>                     
+                        </div>
+                    </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#plans-carousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#plans-carousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <header><h1>Starting At</h1></header>
+            <div class="row text-center">
+                <div class="col-md-2">
+                    <button class="btn btn-light button-week" type="button" data-bs-toggle="collapse" data-bs-target="#seg-times" aria-expanded="false" aria-controls="seg-times">
+                        Seg
+                    </button>
+                    <div class="times-dropdown collapse" id="seg-times">
+                        <div class="card">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <input type="radio" class="btn-check" name="options" id="seg-option-1" autocomplete="off">
+                                    <label class="btn" for="seg-option-1">9h</label>
+                                </li>
+                                <li class="list-group-item">
+                                    <input type="radio" class="btn-check" name="options" id="seg-option-2" autocomplete="off">
+                                    <label class="btn" for="seg-option-2">10h</label>
+                                </li>
+                                <li class="list-group-item">
+                                    <input type="radio" class="btn-check" name="options" id="seg-option-3" autocomplete="off">
+                                    <label class="btn" for="seg-option-3">11h</label>
+                                </li>
+                                <li class="list-group-item">
+                                    <input type="radio" class="btn-check" name="options" id="seg-option-4" autocomplete="off">
+                                    <label class="btn" for="seg-option-4">15h</label>
+                                </li>
+                                <li class="list-group-item">
+                                    <input type="radio" class="btn-check" name="options" id="seg-option-5" autocomplete="off">
+                                    <label class="btn" for="seg-option-5">16h</label>
+                                </li>
+                                <li class="list-group-item">
+                                    <input type="radio" class="btn-check" name="options" id="seg-option-6" autocomplete="off">
+                                    <label class="btn" for="seg-option-6">17h</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-light button-week" type="button" data-bs-toggle="collapse" data-bs-target="#ter-times" aria-expanded="false" aria-controls="ter-times">
+                        Ter
+                    </button>
+                    <div class="times-dropdown collapse" id="ter-times">
+                        <div class="card">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <input type="radio" class="btn-check" name="options" id="ter-option-1" autocomplete="off">
+                                    <label class="btn" for="ter-option-1">9h</label>
+                                </li>
+                                <li class="list-group-item">
+                                    <input type="radio" class="btn-check" name="options" id="ter-option-2" autocomplete="off">
+                                    <label class="btn" for="ter-option-2">10h</label>
+                                </li>
+                                <li class="list-group-item">
+                                    <input type="radio" class="btn-check" name="options" id="ter-option-3" autocomplete="off">
+                                    <label class="btn" for="ter-option-3">11h</label>
+                                </li>
+                                <li class="list-group-item">
+                                    <input type="radio" class="btn-check" name="options" id="ter-option-4" autocomplete="off">
+                                    <label class="btn" for="ter-option-4">15h</label>
+                                </li>
+                                <li class="list-group-item">
+                                    <input type="radio" class="btn-check" name="options" id="ter-option-5" autocomplete="off">
+                                    <label class="btn" for="ter-option-5">16h</label>
+                                </li>
+                                <li class="list-group-item">
+                                    <input type="radio" class="btn-check" name="options" id="ter-option-6" autocomplete="off">
+                                    <label class="btn" for="ter-option-6">17h</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-light button-week" type="button" data-bs-toggle="collapse" data-bs-target="#qua-times" aria-expanded="false" aria-controls="qua-times">
+                        Qua
+                    </button>
+                    <div class="times-dropdown collapse" id="qua-times">
+                        <div class="card">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <input type="radio" class="btn-check" name="options" id="qua-option-1" autocomplete="off">
+                                    <label class="btn" for="qua-option-1">9h</label>
+                                </li>
+                                <li class="list-group-item">
+                                    <input type="radio" class="btn-check" name="options" id="qua-option-2" autocomplete="off">
+                                    <label class="btn" for="qua-option-2">10h</label>
+                                </li>
+                                <li class="list-group-item">
+                                    <input type="radio" class="btn-check" name="options" id="qua-option-3" autocomplete="off">
+                                    <label class="btn" for="qua-option-3">11h</label>
+                                </li>
+                                <li class="list-group-item">
+                                    <input type="radio" class="btn-check" name="options" id="qua-option-4" autocomplete="off">
+                                    <label class="btn" for="qua-option-4">15h</label>
+                                </li>
+                                <li class="list-group-item">
+                                    <input type="radio" class="btn-check" name="options" id="qua-option-5" autocomplete="off">
+                                    <label class="btn" for="qua-option-5">16h</label>
+                                </li>
+                                <li class="list-group-item">
+                                    <input type="radio" class="btn-check" name="options" id="qua-option-6" autocomplete="off">
+                                    <label class="btn" for="qua-option-6">17h</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-light button-week" type="button" data-bs-toggle="collapse" data-bs-target="#qui-times" aria-expanded="false" aria-controls="qui-times">
+                        Qui
+                    </button>
+                    <div class="times-dropdown collapse" id="qui-times">
+                        <div class="card">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <input type="radio" class="btn-check" name="options" id="qui-option-1" autocomplete="off">
+                                    <label class="btn" for="qui-option-1">9h</label>
+                                </li>
+                                <li class="list-group-item">
+                                    <input type="radio" class="btn-check" name="options" id="qui-option-2" autocomplete="off">
+                                    <label class="btn" for="qui-option-2">10h</label>
+                                </li>
+                                <li class="list-group-item">
+                                    <input type="radio" class="btn-check" name="options" id="qui-option-3" autocomplete="off">
+                                    <label class="btn" for="qui-option-3">11h</label>
+                                </li>
+                                <li class="list-group-item">
+                                    <input type="radio" class="btn-check" name="options" id="qui-option-4" autocomplete="off">
+                                    <label class="btn" for="qui-option-4">15h</label>
+                                </li>
+                                <li class="list-group-item">
+                                    <input type="radio" class="btn-check" name="options" id="qui-option-5" autocomplete="off">
+                                    <label class="btn" for="qui-option-5">16h</label>
+                                </li>
+                                <li class="list-group-item">
+                                    <input type="radio" class="btn-check" name="options" id="qui-option-6" autocomplete="off">
+                                    <label class="btn" for="qui-option-6">17h</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-light button-week" type="button" data-bs-toggle="collapse" data-bs-target="#sex-times" aria-expanded="false" aria-controls="sex-times">
+                        Sex
+                    </button>
+                    <div class="times-dropdown collapse" id="sex-times">
+                        <div class="card">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <input type="radio" class="btn-check" name="options" id="sex-option-1" autocomplete="off">
+                                    <label class="btn" for="sex-option-1">9h</label>
+                                </li>
+                                <li class="list-group-item">
+                                    <input type="radio" class="btn-check" name="options" id="sex-option-2" autocomplete="off">
+                                    <label class="btn" for="sex-option-2">10h</label>
+                                </li>
+                                <li class="list-group-item">
+                                    <input type="radio" class="btn-check" name="options" id="sex-option-3" autocomplete="off">
+                                    <label class="btn" for="sex-option-3">11h</label>
+                                </li>
+                                <li class="list-group-item">
+                                    <input type="radio" class="btn-check" name="options" id="sex-option-4" autocomplete="off">
+                                    <label class="btn" for="sex-option-4">15h</label>
+                                </li>
+                                <li class="list-group-item">
+                                    <input type="radio" class="btn-check" name="options" id="sex-option-5" autocomplete="off">
+                                    <label class="btn" for="sex-option-5">16h</label>
+                                </li>
+                                <li class="list-group-item">
+                                    <input type="radio" class="btn-check" name="options" id="sex-option-6" autocomplete="off">
+                                    <label class="btn" for="sex-option-6">17h</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-light button-week" type="button" data-bs-toggle="collapse" data-bs-target="#sab-times" aria-expanded="false" aria-controls="sab-timese">
+                        Sab
+                    </button>
+                    <div class="times-dropdown collapse" id="sab-times">
+                        <div class="card">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <input type="radio" class="btn-check" name="options" id="sab-option-1" autocomplete="off">
+                                    <label class="btn" for="sab-option-1">9h</label>
+                                </li>
+                                <li class="list-group-item">
+                                    <input type="radio" class="btn-check" name="options" id="sab-option-2" autocomplete="off">
+                                    <label class="btn" for="sab-option-2">10h</label>
+                                </li>
+                                <li class="list-group-item">
+                                    <input type="radio" class="btn-check" name="options" id="sab-option-3" autocomplete="off">
+                                    <label class="btn" for="sab-option-3">11h</label>
+                                </li>
+                                <li class="list-group-item">
+                                    <input type="radio" class="btn-check" name="options" id="sab-option-4" autocomplete="off">
+                                    <label class="btn" for="sab-option-4">15h</label>
+                                </li>
+                                <li class="list-group-item">
+                                    <input type="radio" class="btn-check" name="options" id="sab-option-5" autocomplete="off">
+                                    <label class="btn" for="sab-option-5">16h</label>
+                                </li>
+                                <li class="list-group-item">
+                                    <input type="radio" class="btn-check" name="options" id="sab-option-6" autocomplete="off">
+                                    <label class="btn" for="sab-option-6">17h</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <header><h1>Payment Info</h1></header>
+            <form onsubmit="return false;">
+                <div class="form-line row text-center">
+                    <div class="col-md-6">
+                        <label for="name">Some Info:</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input class="profile-form" type="text" id="name" name="name" value="asdfasdf" disabled>
+                    </div>
+                </div>
+
+                <div class="form-line row text-center">
+                    <div class="col-md-6">
+                        <label for="email">Some Info:</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input class="profile-form" type="text" id="email" name="email" value="asdfasdf" disabled>
+                    </div>
+                </div>
+
+                <div class="form-line row text-center">
+                    <div class="col-md-6">
+                        <label for="tel">Some Info:</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input class="profile-form" type="text" id="tel" name="tel" value="asdfasdf" disabled>
+                    </div>
+                </div>       
+            </form> 
+        </section>
+
+        <section class="text-center">
+            <a href="index.html" class="btn btn-success" type="button">Buy</a>
+        </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
